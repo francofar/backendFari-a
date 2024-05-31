@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carga de Datos</title>
+
+</head>
+<body>
+    <h1>Cargue los datos del producto</h1>
+    <form id="productForm">
+        <input type="text" id="productTitle" placeholder="Titulo" required>
+        <input type="text" id="productDescription" placeholder="Descripcion" required>
+        <input type="text" id="productCode" placeholder="Codigo" required>
+        <input type="number" id="productPrice" placeholder="Precio" required>
+        <input type="number" id="productStock" placeholder="Stock" required>
+        <input type="text" id="productCategory" placeholder="Categoria" required>
+        <button type="submit">Agregar Producto</button>
+    </form>
+    <ul id="productList"></ul>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="/js/index.js"></script>
+</body>
+</html>
